@@ -15,3 +15,39 @@
     flex-direction: column;
     align-items: center;
 }
+
+.upcoming-features-section{
+    border: solid black;
+
+    .display-layout(column, space-around, center);
+    font-size: 2rem;
+    // background: @very-light-gray;
+    padding: 2% 0;
+    
+    .listed-items {
+        .display-layout(row, space-between, center);
+    
+        li {
+            margin: 50px;
+        }
+    }
+    
+    ul {
+        .display-layout(column, center, center);
+    }
+    
+    button {
+        width: 10%;
+        padding: 1%;
+        border-radius: 10px;
+        background-color: @primary;
+        color: white;
+        cursor: pointer;
+      
+        &:hover {
+          background-color: darken(@primary, 15%)
+        }
+    }
+
+
+}
