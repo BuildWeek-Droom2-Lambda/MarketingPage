@@ -1,6 +1,45 @@
 // navigation
 .main-header{
-    position: relative;
+    position: fixed;
     background-color: @primary;
-    border-bottom: 2px solid @complement;
+    border-bottom: .2rem solid @secondary;
+    height: 5rem;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 1.5rem;
+
+    z-index: 10;
+
+    .small-logo{
+        height: 75%;
+        width: auto;
+    }
+
+    &-nav{
+        position: relative;
+        height: 75%;
+        width: 45%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 27.5%;
+        &-link{
+            position: relative;
+            height: 100%;
+            width: 20%;
+            border-radius: 2rem;
+            margin: 0 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                background-color: @smoke-white;
+            }
+        }
+    }
+    
 }
