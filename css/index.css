@@ -1,0 +1,104 @@
+/* -- Colors -- */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 98%;
+  width: 100%;
+  margin: 0 auto;
+}
+.container .upcoming-features {
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  background: #CCCCCC;
+  padding: 2% 0;
+}
+.container .upcoming-features .listed-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .upcoming-features .listed-items li {
+  margin: 50px;
+}
+.container .upcoming-features ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .upcoming-features button {
+  width: 10%;
+  padding: 1%;
+  border-radius: 10px;
+  background-color: #7851A9;
+  color: white;
+  cursor: pointer;
+}
+.container .upcoming-features button:hover {
+  background-color: #533875;
+}
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #7851A9;
+  border-bottom: 2px solid #5070A5;
+  margin-top: 0.5%;
+  height: 7vh;
+}
+.main-header .icon-Droom-Logo {
+  height: 100%;
+}
+.main-header .main-header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header .main-header-nav a {
+  padding: 0 40px;
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #FFFFFF;
+}

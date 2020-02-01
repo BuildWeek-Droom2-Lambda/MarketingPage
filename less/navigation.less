@@ -1,6 +1,23 @@
 // navigation
 .main-header{
-    position: relative;
+    .display-layout(row, space-between, flex-end);
     background-color: @primary;
-    border-bottom: 2px solid @complement;
+    border-bottom: 2px solid @complement-1;
+    margin-top: 0.5%;
+    height: 7vh;
+
+    .icon-Droom-Logo {
+        height: 100%;
+    }
+
+    .main-header-nav {
+        .display-layout(row, space-between, center);
+        a {
+            padding: 0 40px;
+            text-decoration: none;
+            font-size: 1.7rem;
+            color: @white;
+        }
+
+    }
 }
