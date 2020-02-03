@@ -17,18 +17,36 @@
 }
 
 .upcoming-features-section{
-    border: solid black;
+
+    color: @smoke-white;
 
     .display-layout(column, space-around, center);
     font-size: 2rem;
-    // background: @very-light-gray;
-    padding: 2% 0;
+
+    .listed-items-page {
+        .display-layout(column, space-between, flex-start);
+        font-size: 2rem;
+        width: 98%;
+
+        h2 {
+            padding-bottom: 1%;
+        }
+
+        p {
+            padding-bottom: 3%;
+        }
+    }
+
+    h1 {
+        font-size: 4rem; 
+        color: @smoke-white
+    }
     
     .listed-items {
         .display-layout(row, space-between, center);
     
         li {
-            margin: 50px;
+            margin: 40px;
         }
     }
     
@@ -48,6 +66,7 @@
           background-color: darken(@primary, 15%)
         }
     }
-
-
 }
+  
+  
+  

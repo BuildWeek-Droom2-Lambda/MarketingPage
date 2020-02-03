@@ -1,0 +1,95 @@
+// contact-section ===================================================
+
+.container-contact {
+    width: 100%;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: @night-rider;
+
+    .wrap-contact {
+        width: 550px;
+        background: transparent;
+        padding: 2% 5% 0% 0%;
+      }    
+      .contact-form-title {
+        display: block;
+        font-size: 3rem;
+        color: @smoke-white;
+        line-height: 1.2;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 49px;
+        padding-left: 10%;
+      }
+      .wrap-input {
+        width: 100%;
+        background-color: @night-rider;
+        border-radius: 31px;
+        margin-bottom: 16px;
+        position: relative;
+
+        .input {
+            position: relative;
+            display: block;
+            width: 100%;
+            background: @smoke-white;
+            border-radius: 31px;
+            font-size: 1.8rem;
+            color: @night-rider;
+            line-height: 1.2;
+          }
+          input.input {
+            height: 62px;
+            padding: 0 35px 0 35px;
+          }
+          textarea.input {
+            min-height: 169px;
+            padding: 19px 35px 0 35px;
+          }
+      }
+  }
+
+ //  Button
+  .container-contact-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5%;
+    padding-left: 10%;
+
+    .contact-form-btn {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        min-width: 150px;
+        height: 50px;
+        background-color: @primary;
+        border-radius: 31px;
+      
+        font-size: 1.6rem;
+        color: @smoke-white;
+        line-height: 1.2;
+        text-transform: uppercase;
+      
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+        position: relative;
+        &:hover{
+            background-color: @smoke-white;
+            color: black;
+        }
+      }
+  }
