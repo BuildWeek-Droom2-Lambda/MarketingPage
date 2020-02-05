@@ -135,7 +135,7 @@ table {
   height: 100%;
   width: 100vw;
 }
-button {
+.button {
   width: 10%;
   padding: 1%;
   background-color: #7851A9;
@@ -144,12 +144,12 @@ button {
   cursor: pointer;
   font-size: 1.6rem;
 }
-button:hover {
+.button:hover {
   background-color: #EEEEEE;
   color: black;
 }
 @media (max-width: 550px) {
-  button {
+  .button {
     width: 90%;
     font-size: 1.5rem;
   }
@@ -468,4 +468,23 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.upcoming-features-section-page .btn {
+  width: 10%;
+  padding: 1%;
+  background-color: #7851A9;
+  color: #EEEEEE;
+  border-radius: 31px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.upcoming-features-section-page .btn:hover {
+  background-color: #EEEEEE;
+  color: black;
+}
+@media (max-width: 550px) {
+  .upcoming-features-section-page .btn {
+    width: 90%;
+    font-size: 1.5rem;
+  }
 }
