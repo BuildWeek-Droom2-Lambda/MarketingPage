@@ -16,38 +16,34 @@
     align-items: center;
 }
 
-.upcoming-features-section{
-    border: solid black;
-
+// Upcoming Features Section =====================================================
+.upcoming-features-section {
     .display-layout(column, space-around, center);
-    font-size: 2rem;
-    // background: @very-light-gray;
-    padding: 2% 0;
+    color: @smoke-white;
+    }
+
+    h1 {
+        font-size: 4rem; 
+        color: @smoke-white 
+    }
     
     .listed-items {
         .display-layout(row, space-between, center);
+
+        @media @mobile {
+            .display-layout(column, space-between, flex-start);
+        }
     
         li {
-            margin: 50px;
+            margin: 40px;
+            font-size: 2.5rem;
+
+            @media @mobile {
+                margin: 20px;
+            }
         }
     }
     
     ul {
         .display-layout(column, center, center);
     }
-    
-    button {
-        width: 10%;
-        padding: 1%;
-        border-radius: 10px;
-        background-color: @primary;
-        color: white;
-        cursor: pointer;
-      
-        &:hover {
-          background-color: darken(@primary, 15%)
-        }
-    }
-
-
-}

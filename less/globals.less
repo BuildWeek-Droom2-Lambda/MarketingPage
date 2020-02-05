@@ -7,3 +7,23 @@
     height: 100%;
     width: 100vw;
 }
+
+button {
+    width: 10%;
+    padding: 1%;
+    background-color: @primary;
+    color: @smoke-white;
+    border-radius: 31px;
+    cursor: pointer;
+    font-size: 1.6rem;
+  
+    &:hover {
+        background-color: @smoke-white;
+        color: black;
+    }
+
+    @media @mobile {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+}

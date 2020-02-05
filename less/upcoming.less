@@ -1,0 +1,88 @@
+// Upcoming Features Section
+
+.upcoming-features-section-page {
+    height: 210vh;
+    .display-layout(column, space-around, center);
+    color: @smoke-white;
+
+    @media @mobile {
+        height: 400vh;
+    }
+
+    .listed-items-page {
+        font-size: 2rem;
+        width: 98%;
+        flex-wrap: wrap;
+        margin-top: 1%;
+
+        @media @mobile {
+            font-size: 1.8rem;
+            margin-top: 0;
+          
+            p {
+                text-align: justify;
+                text-justify: inter-word;
+            }
+        }
+
+        .feature {
+            .display-layout(row, space-around, center);
+            width: 98%;
+            margin-top: 3%;
+
+            @media @mobile {
+                .display-layout(column, space-around, center);
+                padding-top: 10%;
+                margin-top:0%;
+            }
+            
+            .header-text {
+                .display-layout(column, space-around, center);
+                width: 60%;
+                padding-bottom: 4%;
+                line-height: 1.2;
+
+                @media @mobile {
+                    width: 90%;
+                }
+    
+                h2 {
+                    padding-bottom: 3%;
+                    font-size: 3rem;
+                }
+            }
+
+            img {
+                width: 30%;
+                border-radius: 5%;
+
+                @media @mobile {
+                    width: 90%;
+                }
+
+                border: solid @secondary;
+            }
+        }
+
+        @media @mobile {
+            width: 90%;
+        }
+    }
+
+    h1 {
+        font-size: 4rem; 
+        color: @smoke-white 
+    }
+    
+    .listed-items {
+        .display-layout(row, space-between, center);
+    
+        li {
+            margin: 40px;
+        }
+    }
+    
+    ul {
+        .display-layout(column, center, center);
+    }
+}
