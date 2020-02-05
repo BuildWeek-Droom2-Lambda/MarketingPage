@@ -1,0 +1,52 @@
+.app-features-section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .app-features-container{
+        height: 100%;
+        width: 95%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .feature-container{
+            height: 50%;
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgba(@primary, .4);
+            border: .4rem groove @primary;
+            padding: 2rem;
+            margin: 0 1rem;
+            transition: height .5s, width .5s, background-color .5s;
+            &:hover{
+                cursor: pointer;
+                height: 55%;
+                width: 17.5%;
+                background-color: rgba(@secondary, 1);
+                border: .4rem groove @secondary;
+            }
+            &:hover + &:not(&:hover){
+                height: 50%;
+                width: 15%;
+            }
+            img{
+                height: 10rem;
+                width: 80%;
+            }
+            &:last-of-type{
+                img{
+                    height: 10rem;
+                    width: auto;
+                }
+            }
+        }
+    }
+    .button-link{
+        transform: translateY(-8rem);
+    }
+}
