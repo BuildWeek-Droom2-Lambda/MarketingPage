@@ -6,6 +6,15 @@ html {
     font-family: Bree Serif, Berlin Sans FB, Arial, Helvetica, sans-serif;
 }
 
+button {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: @smoke-white;
+    &:hover{
+        color: @night-rider;
+    }
+}
+
 .super-flex{
     .main-header{
         &-nav{
@@ -15,6 +24,128 @@ html {
                 text-decoration: none;
                 &:hover{
                     color: @night-rider;
+                }
+            }
+        }
+    }
+
+    .intro-section{
+        &-introduction{
+            &-header{
+                font-size: 4rem;
+                font-weight: bold;
+                color: @smoke-white;
+            }
+            &-pitch{
+                font-size: 1.6rem;
+                color: rgba(@smoke-white, .7);
+                text-align: center;
+            }
+        }
+        .button-container{
+            .button{
+                font-size: 1.6rem;
+                font-weight: bold;
+                color: @smoke-white;
+                &:hover{
+                    color: @night-rider;
+                }
+            }
+            .button-link button{
+                font-size: 1.6rem;
+                font-weight: bold;
+                color: @smoke-white;
+                &:hover{
+                    color: @night-rider;
+                }
+            }
+        }
+    }
+
+    .about-section{
+        &-header{
+            font-size: 10rem;
+            font-weight: bold;
+            color: @smoke-white;
+        }
+        .photo-card-container{
+            .photo-bio-box{
+                &:hover > .bio-container > .bio-header{
+                    font-size: 2.2rem;
+                    color: @secondary;
+                }
+                &:hover > .bio-container > .bio-greeting{
+                    font-size: 1.8rem;
+                    line-height: 2rem;
+                    color: @secondary;
+                }
+                .bio-container{    
+                    color: @smoke-white;
+                    .bio-header{
+                        font-size: 1.8rem;
+                    }
+                    .bio-greeting{
+                        font-size: 1.5rem;
+                        line-height: 1.6rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .button-link{
+            font-size: 1.6rem;
+                font-weight: bold;
+                color: @smoke-white;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    color: @night-rider;
+                }
+        }
+    }
+    
+    .employee-name{
+        font-size: 6rem;
+        font-weight: bold;
+        color: @smoke-white
+    }
+
+    .employee-intro{
+        font-size: 2.4rem;
+        color: @smoke-white;
+        .employee-greeting{
+            font-size: 5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    .app-features-section{
+        .app-features-container{
+            .feature-container{
+                .feature-header{
+                    font-size: 1.8rem;
+                    color: @smoke-white;
+                    text-align: center;
+                    transition: font-size .5s, color .5s;
+                }
+                .feature-intro{
+                    font-size: 1.2rem;
+                    color: @smoke-white;
+                    text-align: center;
+                    transition: font-size .5s, color .5s;
+                }
+                &:hover{
+                    .feature-header{
+                        font-size: 2rem;
+                        color: @night-rider;
+                    }
+                    .feature-intro{
+                        font-size: 1.4rem;
+                        color: @night-rider;
+                    }
                 }
             }
         }

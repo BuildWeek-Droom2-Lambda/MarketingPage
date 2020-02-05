@@ -127,32 +127,156 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.super-flex {
+body .super-flex {
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: #333333;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
-.button {
-  width: 10%;
-  padding: 1%;
+button {
+  position: relative;
+  height: 5rem;
+  width: 20rem;
+  margin: 0 2rem;
   background-color: #7851A9;
-  color: #EEEEEE;
-  border-radius: 31px;
-  cursor: pointer;
-  font-size: 1.6rem;
+  border: 0.2rem ridge #EEEEEE;
+  border-radius: 1rem;
 }
-.button:hover {
-  background-color: #EEEEEE;
-  color: black;
+button:hover {
+  cursor: pointer;
+  background-color: #F9ED6C;
+}
+button:active {
+  transform: translateY(0.25rem);
 }
 @media (max-width: 550px) {
-  .button {
-    width: 90%;
+  button {
+    width: 70%;
     font-size: 1.5rem;
   }
+}
+html {
+  font-size: 62.5%;
+  font-family: Bree Serif, Berlin Sans FB, Arial, Helvetica, sans-serif;
+}
+button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #EEEEEE;
+}
+button:hover {
+  color: #333333;
+}
+.super-flex .main-header-nav-link {
+  font-size: 1.4rem;
+  color: #EEEEEE;
+  text-decoration: none;
+}
+.super-flex .main-header-nav-link:hover {
+  color: #333333;
+}
+.super-flex .intro-section-introduction-header {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #EEEEEE;
+}
+.super-flex .intro-section-introduction-pitch {
+  font-size: 1.6rem;
+  color: rgba(238, 238, 238, 0.7);
+  text-align: center;
+}
+.super-flex .intro-section .button-container .button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #EEEEEE;
+}
+.super-flex .intro-section .button-container .button:hover {
+  color: #333333;
+}
+.super-flex .intro-section .button-container .button-link button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #EEEEEE;
+}
+.super-flex .intro-section .button-container .button-link button:hover {
+  color: #333333;
+}
+.super-flex .about-section-header {
+  font-size: 10rem;
+  font-weight: bold;
+  color: #EEEEEE;
+}
+.super-flex .about-section .photo-card-container .photo-bio-box:hover > .bio-container > .bio-header {
+  font-size: 2.2rem;
+  color: #F9ED6C;
+}
+.super-flex .about-section .photo-card-container .photo-bio-box:hover > .bio-container > .bio-greeting {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: #F9ED6C;
+}
+.super-flex .about-section .photo-card-container .photo-bio-box .bio-container {
+  color: #EEEEEE;
+}
+.super-flex .about-section .photo-card-container .photo-bio-box .bio-container .bio-header {
+  font-size: 1.8rem;
+}
+.super-flex .about-section .photo-card-container .photo-bio-box .bio-container .bio-greeting {
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+.super-flex .about-section .button-link {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #EEEEEE;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.super-flex .about-section .button-link:hover {
+  color: #333333;
+}
+.super-flex .employee-name {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #EEEEEE;
+}
+.super-flex .employee-intro {
+  font-size: 2.4rem;
+  color: #EEEEEE;
+}
+.super-flex .employee-intro .employee-greeting {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.super-flex .app-features-section .app-features-container .feature-container .feature-header {
+  font-size: 1.8rem;
+  color: #EEEEEE;
+  text-align: center;
+  transition: font-size 0.5s, color 0.5s;
+}
+.super-flex .app-features-section .app-features-container .feature-container .feature-intro {
+  font-size: 1.2rem;
+  color: #EEEEEE;
+  text-align: center;
+  transition: font-size 0.5s, color 0.5s;
+}
+.super-flex .app-features-section .app-features-container .feature-container:hover .feature-header {
+  font-size: 2rem;
+  color: #333333;
+}
+.super-flex .app-features-section .app-features-container .feature-container:hover .feature-intro {
+  font-size: 1.4rem;
+  color: #333333;
+}
+.super-flex .main-footer .copyright {
+  font-size: 2rem;
+  color: #EEEEEE;
 }
 .main-header {
   position: fixed;
@@ -189,6 +313,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.5s, color 0.5s;
 }
 .main-header-nav-link:hover {
   background-color: #EEEEEE;
@@ -198,7 +323,7 @@ table {
   background-color: #7851A9;
   border-top: 0.2rem solid #F9ED6C;
   height: 5rem;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,22 +333,6 @@ table {
   height: 75%;
   width: auto;
   margin-right: 1rem;
-}
-html {
-  font-size: 62.5%;
-  font-family: Bree Serif, Berlin Sans FB, Arial, Helvetica, sans-serif;
-}
-.super-flex .main-header-nav-link {
-  font-size: 1.4rem;
-  color: #EEEEEE;
-  text-decoration: none;
-}
-.super-flex .main-header-nav-link:hover {
-  color: #333333;
-}
-.super-flex .main-footer .copyright {
-  font-size: 2rem;
-  color: #EEEEEE;
 }
 .intro-section,
 .about-section,
@@ -241,6 +350,175 @@ html {
 .intro-section {
   flex-direction: column;
   align-items: center;
+}
+.intro-section .large-logo {
+  position: relative;
+  height: 35%;
+  width: auto;
+  transform: translateY(7.5rem);
+}
+.intro-section-introduction {
+  height: 25%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2.3rem;
+  transform: translateY(12rem);
+  padding: 1rem;
+}
+.intro-section-introduction-pitch {
+  position: relative;
+  height: 30%;
+  width: 75%;
+  margin-top: 2rem;
+}
+.intro-section .button-container {
+  position: relative;
+  height: 10%;
+  width: 50%;
+  transform: translateY(12rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-section .button-container .button {
+  position: relative;
+  height: 5rem;
+  width: 20rem;
+  margin: 0 2rem;
+  background-color: #7851A9;
+  border: 0.2rem ridge #EEEEEE;
+  border-radius: 1rem;
+}
+.intro-section .button-container .button:hover {
+  cursor: pointer;
+  background-color: #F9ED6C;
+}
+.intro-section .button-container .button:active {
+  transform: translateY(0.25rem);
+}
+.intro-section .button-container .button-link button {
+  position: relative;
+  height: 5rem;
+  width: 20rem;
+  margin: 0 2rem;
+  background-color: #7851A9;
+  border: 0.2rem ridge #EEEEEE;
+  border-radius: 1rem;
+}
+.intro-section .button-container .button-link button:hover {
+  cursor: pointer;
+  background-color: #F9ED6C;
+}
+.intro-section .button-container .button-link button:active {
+  transform: translateY(0.25rem);
+}
+.about-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-section-header {
+  position: relative;
+  height: 20%;
+  width: 80%;
+  transform: translateY(7rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-section .photo-card-container {
+  position: relative;
+  height: 50%;
+  width: 90%;
+  transform: translateY(7rem);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-section .photo-card-container .photo-bio-box {
+  position: relative;
+  height: 70%;
+  width: 12.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  margin: 0 0.25rem;
+  border: 0.2rem solid white;
+  background: rgba(120, 81, 169, 0.75);
+  border-radius: 2rem;
+  transition: height 0.5s, width 0.5s;
+}
+.about-section .photo-card-container .photo-bio-box:hover + .about-section .photo-card-container .photo-bio-box:not(.about-section .photo-card-container .photo-bio-box:hover) {
+  height: 70%;
+  width: 12.5%;
+}
+.about-section .photo-card-container .photo-bio-box:hover {
+  cursor: pointer;
+  height: 90%;
+  width: 15%;
+  background-color: #7851A9;
+  border: 0.2rem solid #F9ED6C;
+}
+.about-section .photo-card-container .photo-bio-box .image-container {
+  height: 50%;
+  width: 80%;
+  border-radius: 8rem;
+}
+.about-section .photo-card-container .photo-bio-box .image-container img {
+  border-radius: 8rem;
+  height: 100%;
+  width: 100%;
+}
+.about-section .photo-card-container .photo-bio-box .bio-container {
+  position: relative;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.about-section .photo-card-container .photo-bio-box .bio-container .bio-header {
+  position: relative;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: font-size 0.5s;
+}
+.about-section .photo-card-container .photo-bio-box .bio-container .bio-greeting {
+  position: relative;
+  height: 55%;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  transform: translateY(1rem);
+  transition: font-size 0.5s, line-height 0.5s;
+}
+.about-section .button-link {
+  position: relative;
+  height: 5rem;
+  width: 20rem;
+  margin: 0 2rem;
+  background-color: #7851A9;
+  border: 0.2rem ridge #EEEEEE;
+  border-radius: 1rem;
+  transform: translateY(8rem);
+}
+.about-section .button-link:hover {
+  cursor: pointer;
+  background-color: #F9ED6C;
+}
+.about-section .button-link:active {
+  transform: translateY(0.25rem);
 }
 .upcoming-features-section {
   display: flex;
@@ -281,6 +559,132 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.app-features-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-features-section .app-features-container {
+  height: 100%;
+  width: 95%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.app-features-section .app-features-container .feature-container {
+  height: 50%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(120, 81, 169, 0.4);
+  border: 0.4rem groove #7851A9;
+  padding: 2rem;
+  margin: 0 1rem;
+  transition: height 0.5s, width 0.5s, background-color 0.5s;
+}
+.app-features-section .app-features-container .feature-container:hover {
+  cursor: pointer;
+  height: 55%;
+  width: 17.5%;
+  background-color: #f9ed6c;
+  border: 0.4rem groove #F9ED6C;
+}
+.app-features-section .app-features-container .feature-container:hover + .app-features-section .app-features-container .feature-container:not(.app-features-section .app-features-container .feature-container:hover) {
+  height: 50%;
+  width: 15%;
+}
+.app-features-section .app-features-container .feature-container img {
+  height: 10rem;
+  width: 80%;
+}
+.app-features-section .app-features-container .feature-container:last-of-type img {
+  height: 10rem;
+  width: auto;
+}
+.app-features-section .button-link {
+  transform: translateY(-8rem);
+}
+.about-page {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.about-page .about-employee-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-page .about-employee-container .image-name-container {
+  position: relative;
+  height: 75%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-page .about-employee-container .image-name-container .employee-image {
+  height: 60%;
+  border-radius: 10rem;
+}
+.about-page .about-employee-container .employee-intro {
+  height: 75%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem;
+}
+.about-page .about-employee-container .employee-intro .employee-greeting {
+  height: 5%;
+  width: 100%;
+}
+.about-page .about-employee-container2 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(238, 238, 238, 0.2);
+}
+.about-page .about-employee-container2 .image-name-container {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-page .about-employee-container2 .image-name-container .employee-image {
+  height: 50%;
+  border-radius: 15rem;
+}
+.about-page .about-employee-container2 .employee-intro {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem;
+}
+.about-page .about-employee-container2 .employee-intro .employee-greeting {
+  height: 5%;
+  width: 100%;
 }
 .container-contact {
   width: 100%;
@@ -352,21 +756,24 @@ ul {
   padding-top: 5%;
 }
 .container-contact-form-btn button {
-  width: 30%;
-  padding: 2%;
+  position: relative;
+  height: 5rem;
+  width: 20rem;
+  margin: 0 2rem;
   background-color: #7851A9;
-  color: #EEEEEE;
-  border-radius: 31px;
-  cursor: pointer;
-  font-size: 1.6rem;
+  border: 0.2rem ridge #EEEEEE;
+  border-radius: 1rem;
 }
 .container-contact-form-btn button:hover {
-  background-color: #EEEEEE;
-  color: black;
+  cursor: pointer;
+  background-color: #F9ED6C;
+}
+.container-contact-form-btn button:active {
+  transform: translateY(0.25rem);
 }
 @media (max-width: 550px) {
   .container-contact-form-btn button {
-    width: 95%;
+    width: 80%;
     font-size: 1.5rem;
   }
 }
@@ -468,23 +875,4 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.upcoming-features-section-page .btn {
-  width: 10%;
-  padding: 1%;
-  background-color: #7851A9;
-  color: #EEEEEE;
-  border-radius: 31px;
-  cursor: pointer;
-  font-size: 1.6rem;
-}
-.upcoming-features-section-page .btn:hover {
-  background-color: #EEEEEE;
-  color: black;
-}
-@media (max-width: 550px) {
-  .upcoming-features-section-page .btn {
-    width: 90%;
-    font-size: 1.5rem;
-  }
 }

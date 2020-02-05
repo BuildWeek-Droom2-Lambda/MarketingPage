@@ -72,21 +72,23 @@
     padding-top: 5%;
 
     button {
-      width: 30%;
-      padding: 2%;
+      position: relative;
+      height: 5rem;
+      width: 20rem;
+      margin: 0 2rem;
       background-color: @primary;
-      color: @smoke-white;
-      border-radius: 31px;
-      cursor: pointer;
-      font-size: 1.6rem;
-    
-      &:hover {
-          background-color: @smoke-white;
-          color: black;
+      border: .2rem ridge @smoke-white;
+      border-radius: 1rem;
+      &:hover{
+          cursor: pointer;
+          background-color: @secondary;
+      }
+      &:active{
+          transform: translateY(.25rem);
       }
 
       @media @mobile {
-          width: 95%;
+          width: 80%;
           font-size: 1.5rem;
       }
   
