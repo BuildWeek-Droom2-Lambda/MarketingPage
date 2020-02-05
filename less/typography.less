@@ -6,6 +6,15 @@ html {
     font-family: Bree Serif, Berlin Sans FB, Arial, Helvetica, sans-serif;
 }
 
+button {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: @smoke-white;
+    &:hover{
+        color: @night-rider;
+    }
+}
+
 .super-flex{
     .main-header{
         &-nav{
@@ -63,10 +72,12 @@ html {
             .photo-bio-box{
                 &:hover > .bio-container > .bio-header{
                     font-size: 2.2rem;
+                    color: @secondary;
                 }
                 &:hover > .bio-container > .bio-greeting{
                     font-size: 1.8rem;
                     line-height: 2rem;
+                    color: @secondary;
                 }
                 .bio-container{    
                     color: @smoke-white;
@@ -74,8 +85,9 @@ html {
                         font-size: 1.8rem;
                     }
                     .bio-greeting{
-                        font-size: 1.4rem;
+                        font-size: 1.5rem;
                         line-height: 1.6rem;
+                        text-align: center;
                     }
                 }
             }
@@ -91,6 +103,51 @@ html {
                 &:hover{
                     color: @night-rider;
                 }
+        }
+    }
+    
+    .employee-name{
+        font-size: 6rem;
+        font-weight: bold;
+        color: @smoke-white
+    }
+
+    .employee-intro{
+        font-size: 2.4rem;
+        color: @smoke-white;
+        .employee-greeting{
+            font-size: 5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    .app-features-section{
+        .app-features-container{
+            .feature-container{
+                .feature-header{
+                    font-size: 1.8rem;
+                    color: @smoke-white;
+                    text-align: center;
+                    transition: font-size .5s, color .5s;
+                }
+                .feature-intro{
+                    font-size: 1.2rem;
+                    color: @smoke-white;
+                    text-align: center;
+                    transition: font-size .5s, color .5s;
+                }
+                &:hover{
+                    .feature-header{
+                        font-size: 2rem;
+                        color: @night-rider;
+                    }
+                    .feature-intro{
+                        font-size: 1.4rem;
+                        color: @night-rider;
+                    }
+                }
+            }
         }
     }
 

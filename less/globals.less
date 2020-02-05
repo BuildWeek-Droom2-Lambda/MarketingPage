@@ -6,8 +6,28 @@ body{
         flex-direction: column;
         background-color: @night-rider;
         height: 100%;
-        width: 100vw;
+        width: 100%;
     }
 }
 
+button {
+    position: relative;
+    height: 5rem;
+    width: 20rem;
+    margin: 0 2rem;
+    background-color: @primary;
+    border: .2rem ridge @smoke-white;
+    border-radius: 1rem;
+    &:hover{
+        cursor: pointer;
+        background-color: @secondary;
+    }
+    &:active{
+        transform: translateY(.25rem);
+    }
 
+    @media @mobile {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+}
