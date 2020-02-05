@@ -1,11 +1,215 @@
 /* -- Colors -- */
-.super-flex {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body .super-flex {
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: #333333;
   height: 100%;
   width: 100vw;
+}
+html {
+  font-size: 62.5%;
+  font-family: Bree Serif, Berlin Sans FB, Arial, Helvetica, sans-serif;
+}
+.super-flex .main-header-nav-link {
+  font-size: 1.4rem;
+  color: #EEEEEE;
+  text-decoration: none;
+}
+.super-flex .main-header-nav-link:hover {
+  color: #333333;
+}
+.super-flex .intro-section-introduction-header {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #EEEEEE;
+}
+.super-flex .intro-section-introduction-pitch {
+  font-size: 1.6rem;
+  color: rgba(238, 238, 238, 0.7);
+  text-align: center;
+}
+.super-flex .intro-section .button-container .button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #EEEEEE;
+}
+.super-flex .intro-section .button-container .button:hover {
+  color: #333333;
+}
+.super-flex .intro-section .button-container .button-link button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #EEEEEE;
+}
+.super-flex .intro-section .button-container .button-link button:hover {
+  color: #333333;
+}
+.super-flex .about-section-header {
+  font-size: 10rem;
+  font-weight: bold;
+  color: #EEEEEE;
+}
+.super-flex .about-section .photo-card-container .photo-bio-box:hover > .bio-container > .bio-header {
+  font-size: 2.2rem;
+}
+.super-flex .about-section .photo-card-container .photo-bio-box:hover > .bio-container > .bio-greeting {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+.super-flex .about-section .photo-card-container .photo-bio-box .bio-container {
+  color: #EEEEEE;
+}
+.super-flex .about-section .photo-card-container .photo-bio-box .bio-container .bio-header {
+  font-size: 1.8rem;
+}
+.super-flex .about-section .photo-card-container .photo-bio-box .bio-container .bio-greeting {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+.super-flex .about-section .button-link {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #EEEEEE;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.super-flex .about-section .button-link:hover {
+  color: #333333;
+}
+.super-flex .main-footer .copyright {
+  font-size: 2rem;
+  color: #EEEEEE;
 }
 .main-header {
   position: fixed;
@@ -42,6 +246,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.5s, color 0.5s;
 }
 .main-header-nav-link:hover {
   background-color: #EEEEEE;
@@ -62,22 +267,6 @@
   width: auto;
   margin-right: 1rem;
 }
-html {
-  font-size: 62.5%;
-  font-family: Bree Serif, Berlin Sans FB, Arial, Helvetica, sans-serif;
-}
-.super-flex .main-header-nav-link {
-  font-size: 1.4rem;
-  color: #EEEEEE;
-  text-decoration: none;
-}
-.super-flex .main-header-nav-link:hover {
-  color: #333333;
-}
-.super-flex .main-footer .copyright {
-  font-size: 2rem;
-  color: #EEEEEE;
-}
 .intro-section,
 .about-section,
 .upcoming-features-section,
@@ -94,6 +283,166 @@ html {
 .intro-section {
   flex-direction: column;
   align-items: center;
+}
+.intro-section .large-logo {
+  position: relative;
+  height: 35%;
+  width: auto;
+  transform: translateY(7.5rem);
+}
+.intro-section-introduction {
+  height: 25%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2.3rem;
+  transform: translateY(12rem);
+  padding: 1rem;
+}
+.intro-section-introduction-pitch {
+  position: relative;
+  height: 30%;
+  width: 75%;
+  margin-top: 2rem;
+}
+.intro-section .button-container {
+  position: relative;
+  height: 10%;
+  width: 50%;
+  transform: translateY(12rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-section .button-container .button {
+  position: relative;
+  height: 5rem;
+  width: 20rem;
+  margin: 0 2rem;
+  background-color: #7851A9;
+  border: 0.2rem ridge #EEEEEE;
+  border-radius: 1rem;
+}
+.intro-section .button-container .button:hover {
+  cursor: pointer;
+  background-color: #F9ED6C;
+}
+.intro-section .button-container .button:active {
+  transform: translateY(0.25rem);
+}
+.intro-section .button-container .button-link button {
+  position: relative;
+  height: 5rem;
+  width: 20rem;
+  margin: 0 2rem;
+  background-color: #7851A9;
+  border: 0.2rem ridge #EEEEEE;
+  border-radius: 1rem;
+}
+.intro-section .button-container .button-link button:hover {
+  cursor: pointer;
+  background-color: #F9ED6C;
+}
+.intro-section .button-container .button-link button:active {
+  transform: translateY(0.25rem);
+}
+.about-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-section-header {
+  position: relative;
+  height: 20%;
+  width: 80%;
+  transform: translateY(7rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-section .photo-card-container {
+  position: relative;
+  height: 50%;
+  width: 90%;
+  transform: translateY(7rem);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-section .photo-card-container .photo-bio-box {
+  position: relative;
+  height: 70%;
+  width: 12.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 0.2rem solid white;
+  transition: height 0.5s, width 0.5s;
+}
+.about-section .photo-card-container .photo-bio-box:hover + .about-section .photo-card-container .photo-bio-box:not(.about-section .photo-card-container .photo-bio-box:hover) {
+  height: 70%;
+  width: 12.5%;
+}
+.about-section .photo-card-container .photo-bio-box:hover {
+  height: 90%;
+  width: 15%;
+  cursor: pointer;
+}
+.about-section .photo-card-container .photo-bio-box .image-container {
+  height: 50%;
+  width: 80%;
+  border-radius: 8rem;
+  border: 0.2rem solid red;
+}
+.about-section .photo-card-container .photo-bio-box .bio-container {
+  position: relative;
+  height: 40%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  border: 0.2rem solid blue;
+}
+.about-section .photo-card-container .photo-bio-box .bio-container .bio-header {
+  position: relative;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: font-size 0.5s;
+}
+.about-section .photo-card-container .photo-bio-box .bio-container .bio-greeting {
+  position: relative;
+  height: 55%;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  transform: translateY(1rem);
+  transition: font-size 0.5s, line-height 0.5s;
+}
+.about-section .button-link {
+  position: relative;
+  height: 5rem;
+  width: 20rem;
+  margin: 0 2rem;
+  background-color: #7851A9;
+  border: 0.2rem ridge #EEEEEE;
+  border-radius: 1rem;
+  transform: translateY(8rem);
+}
+.about-section .button-link:hover {
+  cursor: pointer;
+  background-color: #F9ED6C;
+}
+.about-section .button-link:active {
+  transform: translateY(0.25rem);
 }
 .upcoming-features-section {
   border: solid black;

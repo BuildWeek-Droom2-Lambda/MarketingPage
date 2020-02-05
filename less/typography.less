@@ -20,6 +20,80 @@ html {
         }
     }
 
+    .intro-section{
+        &-introduction{
+            &-header{
+                font-size: 4rem;
+                font-weight: bold;
+                color: @smoke-white;
+            }
+            &-pitch{
+                font-size: 1.6rem;
+                color: rgba(@smoke-white, .7);
+                text-align: center;
+            }
+        }
+        .button-container{
+            .button{
+                font-size: 1.6rem;
+                font-weight: bold;
+                color: @smoke-white;
+                &:hover{
+                    color: @night-rider;
+                }
+            }
+            .button-link button{
+                font-size: 1.6rem;
+                font-weight: bold;
+                color: @smoke-white;
+                &:hover{
+                    color: @night-rider;
+                }
+            }
+        }
+    }
+
+    .about-section{
+        &-header{
+            font-size: 10rem;
+            font-weight: bold;
+            color: @smoke-white;
+        }
+        .photo-card-container{
+            .photo-bio-box{
+                &:hover > .bio-container > .bio-header{
+                    font-size: 2.2rem;
+                }
+                &:hover > .bio-container > .bio-greeting{
+                    font-size: 1.8rem;
+                    line-height: 2rem;
+                }
+                .bio-container{    
+                    color: @smoke-white;
+                    .bio-header{
+                        font-size: 1.8rem;
+                    }
+                    .bio-greeting{
+                        font-size: 1.4rem;
+                        line-height: 1.6rem;
+                    }
+                }
+            }
+        }
+        .button-link{
+            font-size: 1.6rem;
+                font-weight: bold;
+                color: @smoke-white;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    color: @night-rider;
+                }
+        }
+    }
+
     .main-footer{
         .copyright{
             font-size: 2rem;
