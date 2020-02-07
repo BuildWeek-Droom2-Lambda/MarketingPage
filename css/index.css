@@ -151,7 +151,7 @@ button:hover {
 button:active {
   transform: translateY(0.25rem);
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   button {
     width: 70%;
     font-size: 1.5rem;
@@ -542,7 +542,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .listed-items {
     display: flex;
     flex-direction: column;
@@ -554,7 +554,7 @@ h1 {
   margin: 40px;
   font-size: 2.5rem;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .listed-items li {
     margin: 20px;
   }
@@ -698,7 +698,7 @@ ul {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .container-contact {
     width: 95%;
   }
@@ -708,7 +708,7 @@ ul {
   background: transparent;
   padding: 2% 5% 0% 0%;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .container-contact .wrap-contact {
     width: 90%;
     padding: 0;
@@ -776,7 +776,7 @@ ul {
 .container-contact-form-btn button:active {
   transform: translateY(0.25rem);
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .container-contact-form-btn button {
     width: 80%;
     font-size: 1.5rem;
@@ -790,7 +790,7 @@ ul {
   align-items: center;
   color: #EEEEEE;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .upcoming-features-section-page {
     height: 400vh;
   }
@@ -801,7 +801,7 @@ ul {
   flex-wrap: wrap;
   margin-top: 1%;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .upcoming-features-section-page .listed-items-page {
     font-size: 1.8rem;
     margin-top: 0;
@@ -819,7 +819,7 @@ ul {
   width: 98%;
   margin-top: 3%;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .upcoming-features-section-page .listed-items-page .feature {
     display: flex;
     flex-direction: column;
@@ -838,7 +838,7 @@ ul {
   padding-bottom: 4%;
   line-height: 1.2;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .upcoming-features-section-page .listed-items-page .feature .header-text {
     width: 90%;
   }
@@ -852,12 +852,12 @@ ul {
   border-radius: 5%;
   border: solid #F9ED6C;
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .upcoming-features-section-page .listed-items-page .feature img {
     width: 90%;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .upcoming-features-section-page .listed-items-page {
     width: 90%;
   }
