@@ -1,17 +1,12 @@
 .main-footer{
-    position: relative;
+    .position(relative, 5rem, 100%);
     background-color: @primary;
     border-top: .2rem solid @secondary;
-    height: 5rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .flexible-display-layout(flex, center, center);
     margin: 0;
 
     .small-logo{
-        height: 75%;
-        width: auto;
+        .dimensions(75%, auto);
         margin-right: 1rem;
     }
 }
