@@ -263,6 +263,11 @@ button:hover {
   color: #EEEEEE;
   transform: translateY(5rem);
 }
+@media (max-width: 1325px) {
+  .super-flex .app-features-section .app-features-header {
+    font-size: 2rem;
+  }
+}
 .super-flex .app-features-section .app-features-container .feature-container .feature-header {
   font-size: 1.8rem;
   color: #EEEEEE;
