@@ -59,7 +59,8 @@
     .button-container{
         .position(relative, 10%, 50%);
         transform: translateY(12rem);
-        @media(max-width 1100px){
+        
+        @media(max-width: 1100px){
             transform: translateY(14rem);
         }
         @media(max-width: 950px){
@@ -301,11 +302,11 @@
         @media @mobile {
             .display-layout(column, space-between, flex-start);
         }
-    
+
         li {
             margin: 40px;
 
-            @media @mobile {
+            @media @tablet {
                 margin: 20px;
             }
         }
