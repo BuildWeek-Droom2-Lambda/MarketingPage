@@ -4,6 +4,9 @@
 .intro-section, .about-section, .upcoming-features-section, .contact-section{
     .position(relative, 100vh, 100vw);
     display: flex;
+    @media(max-width: 900px){
+        .position(relative, 100vh, 100%);
+    }
 }
 
 .about-section, .contact-section{
@@ -16,6 +19,14 @@
     .large-logo{
         .position(relative, 35%, auto);
         transform: translateY(7.5rem);
+        @media(max-width: 890px){
+            .position(relative, 40%, auto);
+            transform: translateY(9.5rem);
+        }
+        @media(max-width: 750px){
+            .position(relative, 30%, auto);
+            transform: translateY(7.5rem);
+        }
     }
     &-introduction{
         .position(relative, 25%, 50%);
@@ -24,6 +35,19 @@
         align-items: center;
         line-height: 2.3rem;
         transform: translateY(12rem);
+        @media(max-width: 890px){
+            .position(relative, 25%, 80%);
+            transform: translateY(12rem);
+        }
+        @media(max-width: 750px){
+            transform: translateY(10rem);
+        }
+        @media (max-width: 620px){
+            .position(relative, 25%, 90%);
+        }
+        @media (max-width: 550px){
+            .position(relative, 25%, 97.5%);
+        }
         padding: 1rem;
         &-pitch{
             .position(relative, 30%, 75%);
@@ -35,6 +59,21 @@
     .button-container{
         .position(relative, 10%, 50%);
         transform: translateY(12rem);
+        @media(max-width 1100px){
+            transform: translateY(14rem);
+        }
+        @media(max-width: 950px){
+            .position(relative, 10%, 75%);
+        }
+        @media (max-width: 890px){
+            transform: translateY(10rem);
+        }
+        @media (max-width: 675px){
+            transform: translateY(13rem);
+        }
+        @media (max-width: 620px){
+            .position(relative, 10%, 90%);
+        }
         .flexible-display-layout(flex, center, center);
         .button{
             .position(relative, 5rem, 20rem);
@@ -77,11 +116,29 @@
         .position(relative, 20%, 80%);
         transform: translateY(7rem);
         .flexible-display-layout(flex, center, center);
+        @media(max-width: 1325px){
+            transform: translateY(2rem);
+        }
+        @media(max-width: 720px){
+            transform: translateY(-1rem);
+        }
     }
     .photo-card-container{
         .position(relative, 50%, 90%);
         transform: translateY(7rem);
         .flexible-display-layout(flex, space-evenly, center);
+        @media(max-width: 1075px){
+            .position(relative, 40%, 90%);
+            flex-flow: row wrap;
+            transform: translateY(2rem);
+        }
+        @media(max-width: 800){
+            .position(relative, 70%, 90%);
+        }
+        @media(max-width: 720px){
+            transform: translateY(-2rem);
+            .position(relative, 80%, 90%);
+        }
         .photo-bio-box{
             .position(relative, 70%, 12.5%);
             .expanded-flexible-display-layout(flex, column, space-evenly, center);
@@ -91,15 +148,32 @@
             background: rgba(@primary, .75);
             border-radius: 2rem;
             transition: height .5s, width .5s;
+            @media(max-width: 1325px){
+                .position(relative, 50%, 10%);
+                margin: .5rem .25rem;
+            }
+            @media(max-width: 900px){
+                .position(relative, 50%, 12.5%);
+                margin: .5rem .25rem;
+            }
+            @media(max-width: 800px){
+                .position(relative, 50%, 15%);
+            }
+            @media(max-width: 720px){
+                .position(relative, 30%, 15%);
+                padding: .5rem;
+            }
+            @media(max-width: 650px){
+                .position(relative, 30%, 20%);
+                padding: .5rem;
+            }
+            @media @mobile {
+                .position(relative, 30%, 25%);
+                padding: .5rem;
+            }
             &:hover + &:not(&:hover){
                 height: 70%;
                 width: 12.5%;
-            }
-            &:hover{
-                cursor: pointer;
-                .dimensions(90%, 15%);
-                background-color: @primary;
-                border: .2rem solid @secondary;
             }
             .image-container{
                 .dimensions(50%, 80%);
@@ -129,6 +203,36 @@
                     transition: font-size .5s, line-height .5s;
                 }
             }
+            &:hover{
+                cursor: pointer;
+                .dimensions(90%, 15%);
+                background-color: @primary;
+                border: .2rem solid @secondary;
+                @media(max-width: 1050px){
+                    .dimensions(70%, 15%);
+                    .bio-container{
+                        .bio-greeting{
+                            .position(relative, 55%, 95%);
+                        }
+                    }
+                }
+                @media(max-width: 840px){
+                    .bio-container{
+                        .bio-greeting{
+                            .position(relative, 55%, 90%);
+                        }
+                    }
+                }
+                @media(max-width: 770px){
+                    .dimensions(40%, 20%);
+                }
+                @media(max-width: 720px){
+                    .dimensions(40%, 15%);
+                }
+                @media(max-width: 500px){
+                    .dimensions(30%, 25%);
+                }
+            }
         }
     }
 
@@ -140,6 +244,15 @@
             border: .2rem ridge @smoke-white;
             border-radius: 1rem;
             transform: translateY(8rem);
+            @media(max-width: 1075px){
+                transform: translateY(20rem);
+            }
+            @media(max-width: 720px){
+                transform: translateY(-2rem);
+            }
+            @media @mobile {
+                transform: translateY(-1rem);
+            }
             &:hover{
                 cursor: pointer;
                 background-color: @secondary;
@@ -153,10 +266,37 @@
 // Upcoming Features Section =====================================================
 .upcoming-features-section {
     .display-layout(column, space-around, center);
+        .btn{
+            .position(relative, 5rem, 20rem);
+            margin: 0 2rem;
+            background-color: @primary;
+            border: .2rem ridge @smoke-white;
+            border-radius: 1rem;
+            &:hover{
+                cursor: pointer;
+                background-color: @secondary;
+            }
+            &:active{
+                transform: translateY(.25rem);
+            }
+        }
     }
     
     .listed-items {
         .display-layout(row, space-between, center);
+
+        @media(max-width: 1300px){
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        @media(max-width: 730px){
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        @media(max-width: 650px){
+            .display-layout(column, space-between, flex-start);
+        }
 
         @media @mobile {
             .display-layout(column, space-between, flex-start);

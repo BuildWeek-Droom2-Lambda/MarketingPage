@@ -3,9 +3,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media(max-width: 1350px){
+        justify-content: center;
+    }
     .app-features-container{
         .dimensions(100%, 95%);
         .flexible-display-layout(flex, space-evenly, center);
+        @media(max-width: 1350px){
+            .dimensions(60%, 70%);
+            flex-flow: row wrap;
+        }
+        @media(max-width: 840px){
+            transform: translateY(-3rem);
+        }
+        @media(max-width: 840px){
+            .dimensions(60%, 80%);
+        }
+        @media(max-width: 715px){
+            .dimensions(60%, 90%);
+        }
+        @media(max-width: 630px){
+            .dimensions(60%, 100%);
+        }
         .feature-container{
             .dimensions(50%, 15%);
             .expanded-flexible-display-layout(flex, column, space-evenly, center);
@@ -14,26 +33,68 @@
             padding: 2rem;
             margin: 0 1rem;
             transition: height .5s, width .5s, background-color .5s;
+            @media(max-width: 1350px){
+                .dimensions(50%, 20% );
+                padding: 1rem;
+                margin: .25rem .25rem;
+            }
+            @media(max-width: 1075px){
+                .dimensions(50%, 25% );
+                padding: 1rem;
+                margin: .25rem .25rem;
+            }
+            @media(max-width: 840px){
+                .dimensions(52.5%, 27.5% );
+                padding: 1rem;
+                margin: .25rem .25rem;
+            }
+            @media(max-width: 575px){
+                .dimensions(50%, 25% );
+                padding: 1rem;
+                margin: .25rem .25rem;
+            }
             &:hover{
                 cursor: pointer;
                 .dimensions(55%, 17.5%);
                 background-color: rgba(@secondary, 1);
                 border: .4rem groove @secondary;
+                @media(max-width: 1350px){
+                    .dimensions(52.5%, 22.5% );
+                }
+                @media(max-width: 1075px){
+                    .dimensions(55.5%, 27.5% );
+                    & + .button-link{
+                        transform: translateY(12rem);
+                    }
+                }
+                @media(max-width: 575px){
+                    .dimensions(52.5%, 25% );
+                }
+
             }
             &:hover + &:not(&:hover){
                 .dimensions(50%, 15%);
             }
             img{
                 .dimensions(10rem, 80%);
+                @media(max-width: 1350px){
+                    .dimensions(8rem, 60% );
+                }
             }
             &:last-of-type{
                 img{
                     .dimensions(10rem, auto);
+                    @media(max-width: 1350px){
+                        .dimensions(8rem, 60% );
+                    }
                 }
             }
         }
     }
     .button-link{
         transform: translateY(-8rem);
+        @media(max-width: 1350px){
+            transform: translateY(7.5rem);
+        }
     }
 }
