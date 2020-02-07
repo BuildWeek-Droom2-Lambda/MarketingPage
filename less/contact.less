@@ -5,6 +5,10 @@
     flex-wrap: wrap;
     .flexible-display-layout(flex, center, center);
 
+    @media(max-width: 660px){
+      width: 95%;
+    }
+
     @media @mobile {
       width: 95%;
     }
@@ -13,6 +17,13 @@
         width: 550px;
         background: transparent;
         padding: 2% 5% 0% 0%;
+
+        @media(max-width: 660px){
+
+          width: 95%;
+          padding: 0;
+
+        }
 
         @media @mobile {
           width: 90%;
@@ -74,10 +85,6 @@
       }
       &:active{
           transform: translateY(.25rem);
-      }
-
-      @media @mobile {
-          width: 80%;
       }
   
       }
