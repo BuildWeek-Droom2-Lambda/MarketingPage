@@ -5,8 +5,14 @@
     flex-wrap: wrap;
     .flexible-display-layout(flex, center, center);
 
+    @media @tablet {
+      width: 80%;
+      margin-left: 10%;
+    }
+
     @media @mobile {
-      width: 95%;
+      width: 85%;
+      margin-left: 5%;
     }
 
     .wrap-contact {
@@ -14,11 +20,15 @@
         background: transparent;
         padding: 2% 5% 0% 0%;
 
+        @media @tablet {
+          width: 95%;
+        }
+
         @media @mobile {
           width: 90%;
           padding: 0;
         }
-      
+
     }    
       .contact-form-title {
         display: block;
@@ -75,11 +85,12 @@
       &:active{
           transform: translateY(.25rem);
       }
-
+      @media @tablet {
+        width: 30%;
+      }
+      
       @media @mobile {
           width: 80%;
       }
-  
-      }
-    
+    }
   }

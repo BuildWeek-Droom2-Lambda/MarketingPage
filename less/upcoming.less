@@ -3,27 +3,35 @@
 .upcoming-features-section-page {
     height: 210vh;
     .display-layout(column, space-around, center);
+
+    @media @tablet {
+        height: 450vh;
+    }
+
     @media @mobile {
         height: 400vh;
     }
+
     .listed-items-page {
         width: 98%;
         flex-wrap: wrap;
         margin-top: 1%;
 
-        @media @mobile {
+        @media @tablet {
             margin-top: 0;
         }
+
         .feature {
             .display-layout(row, space-around, center);
             width: 98%;
             margin-top: 3%;
 
-            @media @mobile {
+            @media @tablet {
                 .display-layout(column, space-around, center);
                 padding-top: 10%;
                 margin-top:0%;
             }
+
             .header-text {
                 .display-layout(column, space-around, center);
                 width: 90%;
@@ -38,7 +46,7 @@
                 width: 30%;
                 border-radius: 5%;
 
-                @media @mobile {
+                @media @tablet {
                     width: 90%;
                 }
 
@@ -46,12 +54,14 @@
             }
         }
 
-        @media @mobile {
+        @media @tablet {
             width: 90%;
         }
+
     }    
+
     .listed-items {
-        .display-layout(row, space-between, center);
+        .display-layout(column, space-between, center);
     
         li {
             margin: 40px;

@@ -594,7 +594,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .listed-items {
     display: flex;
     flex-direction: column;
@@ -605,7 +605,7 @@ button:hover {
 .listed-items li {
   margin: 40px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .listed-items li {
     margin: 20px;
   }
@@ -749,15 +749,27 @@ ul {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .container-contact {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 @media (max-width: 500px) {
   .container-contact {
-    width: 95%;
+    width: 85%;
+    margin-left: 5%;
   }
 }
 .container-contact .wrap-contact {
   width: 550px;
   background: transparent;
   padding: 2% 5% 0% 0%;
+}
+@media (max-width: 800px) {
+  .container-contact .wrap-contact {
+    width: 95%;
+  }
 }
 @media (max-width: 500px) {
   .container-contact .wrap-contact {
@@ -819,6 +831,11 @@ ul {
 .container-contact-form-btn button:active {
   transform: translateY(0.25rem);
 }
+@media (max-width: 800px) {
+  .container-contact-form-btn button {
+    width: 30%;
+  }
+}
 @media (max-width: 500px) {
   .container-contact-form-btn button {
     width: 80%;
@@ -831,6 +848,11 @@ ul {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .upcoming-features-section-page {
+    height: 450vh;
+  }
+}
 @media (max-width: 500px) {
   .upcoming-features-section-page {
     height: 400vh;
@@ -841,7 +863,7 @@ ul {
   flex-wrap: wrap;
   margin-top: 1%;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .upcoming-features-section-page .listed-items-page {
     margin-top: 0;
   }
@@ -854,7 +876,7 @@ ul {
   width: 98%;
   margin-top: 3%;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .upcoming-features-section-page .listed-items-page .feature {
     display: flex;
     flex-direction: column;
@@ -881,19 +903,19 @@ ul {
   border-radius: 5%;
   border: solid #F9ED6C;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .upcoming-features-section-page .listed-items-page .feature img {
     width: 90%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .upcoming-features-section-page .listed-items-page {
     width: 90%;
   }
 }
 .upcoming-features-section-page .listed-items {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
