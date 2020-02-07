@@ -154,7 +154,6 @@ button:active {
 @media (max-width: 500px) {
   button {
     width: 70%;
-    font-size: 1.5rem;
   }
 }
 html {
@@ -168,6 +167,11 @@ button {
 }
 button:hover {
   color: #333333;
+}
+@media (max-width: 500px) {
+  button {
+    font-size: 1.5rem;
+  }
 }
 .super-flex .main-header-nav-link {
   font-size: 1.4rem;
@@ -254,6 +258,11 @@ button:hover {
   font-weight: bold;
   text-align: center;
 }
+.super-flex .app-features-section .app-features-header {
+  font-size: 7rem;
+  color: #EEEEEE;
+  transform: translateY(5rem);
+}
 .super-flex .app-features-section .app-features-container .feature-container .feature-header {
   font-size: 1.8rem;
   color: #EEEEEE;
@@ -273,6 +282,54 @@ button:hover {
 .super-flex .app-features-section .app-features-container .feature-container:hover .feature-intro {
   font-size: 1.4rem;
   color: #333333;
+}
+.super-flex .upcoming-features-section-page {
+  color: #EEEEEE;
+}
+.super-flex .upcoming-features-section-page .listed-items-page {
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .super-flex .upcoming-features-section-page .listed-items-page {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+  .super-flex .upcoming-features-section-page .listed-items-page p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+.super-flex .upcoming-features-section-page .listed-items-page .feature .header-text {
+  line-height: 1.2;
+}
+.super-flex .upcoming-features-section-page .listed-items-page .feature .header-text h2 {
+  font-size: 3rem;
+}
+.super-flex .upcoming-features-section-page h1 {
+  font-size: 4rem;
+  color: #EEEEEE;
+}
+.super-flex .upcoming-features-section {
+  color: #EEEEEE;
+}
+.super-flex h1 {
+  font-size: 4rem;
+  color: #EEEEEE;
+}
+.super-flex .listed-items li {
+  font-size: 2.5rem;
+}
+.super-flex .contact-section .container-contact .contact-form-title {
+  font-size: 3rem;
+  color: #EEEEEE;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+}
+.super-flex .contact-section .container-contact .wrap-input .input {
+  font-size: 1.8rem;
+  color: #333333;
+  line-height: 1.2;
 }
 .super-flex .main-footer .copyright {
   font-size: 2rem;
@@ -364,7 +421,7 @@ button:hover {
   height: 25%;
   width: 50%;
   display: flex;
-  justify-content: column;
+  flex-direction: column;
   align-items: center;
   line-height: 2.3rem;
   transform: translateY(12rem);
@@ -530,11 +587,6 @@ button:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  color: #EEEEEE;
-}
-h1 {
-  font-size: 4rem;
-  color: #EEEEEE;
 }
 .listed-items {
   display: flex;
@@ -552,7 +604,6 @@ h1 {
 }
 .listed-items li {
   margin: 40px;
-  font-size: 2.5rem;
 }
 @media (max-width: 500px) {
   .listed-items li {
@@ -693,8 +744,8 @@ ul {
 }
 .container-contact {
   width: 100%;
-  display: flex;
   flex-wrap: wrap;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -716,11 +767,6 @@ ul {
 }
 .container-contact .contact-form-title {
   display: block;
-  font-size: 3rem;
-  color: #EEEEEE;
-  line-height: 1.2;
-  text-transform: uppercase;
-  text-align: center;
   padding-bottom: 49px;
   padding-left: 10%;
 }
@@ -737,9 +783,6 @@ ul {
   width: 100%;
   background: #EEEEEE;
   border-radius: 31px;
-  font-size: 1.8rem;
-  color: #333333;
-  line-height: 1.2;
 }
 .container-contact .wrap-input input.input {
   height: 62px;
@@ -779,7 +822,6 @@ ul {
 @media (max-width: 500px) {
   .container-contact-form-btn button {
     width: 80%;
-    font-size: 1.5rem;
   }
 }
 .upcoming-features-section-page {
@@ -788,7 +830,6 @@ ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  color: #EEEEEE;
 }
 @media (max-width: 500px) {
   .upcoming-features-section-page {
@@ -796,19 +837,13 @@ ul {
   }
 }
 .upcoming-features-section-page .listed-items-page {
-  font-size: 2rem;
   width: 98%;
   flex-wrap: wrap;
   margin-top: 1%;
 }
 @media (max-width: 500px) {
   .upcoming-features-section-page .listed-items-page {
-    font-size: 1.8rem;
     margin-top: 0;
-  }
-  .upcoming-features-section-page .listed-items-page p {
-    text-align: justify;
-    text-justify: inter-word;
   }
 }
 .upcoming-features-section-page .listed-items-page .feature {
@@ -834,18 +869,12 @@ ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 60%;
-  padding-bottom: 4%;
-  line-height: 1.2;
-}
-@media (max-width: 500px) {
-  .upcoming-features-section-page .listed-items-page .feature .header-text {
-    width: 90%;
-  }
+  width: 90%;
+  padding-bottom: 6%;
 }
 .upcoming-features-section-page .listed-items-page .feature .header-text h2 {
-  padding-bottom: 3%;
   font-size: 3rem;
+  padding-bottom: 4%;
 }
 .upcoming-features-section-page .listed-items-page .feature img {
   width: 30%;
@@ -861,10 +890,6 @@ ul {
   .upcoming-features-section-page .listed-items-page {
     width: 90%;
   }
-}
-.upcoming-features-section-page h1 {
-  font-size: 4rem;
-  color: #EEEEEE;
 }
 .upcoming-features-section-page .listed-items {
   display: flex;

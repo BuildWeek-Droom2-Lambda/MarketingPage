@@ -13,6 +13,9 @@ button {
     &:hover{
         color: @night-rider;
     }
+    @media @mobile {
+        font-size: 1.5rem;
+    }
 }
 
 .super-flex{
@@ -123,6 +126,11 @@ button {
     }
 
     .app-features-section{
+        .app-features-header{
+            font-size: 7rem;
+            color: @smoke-white;
+            transform: translateY(5rem);
+        }
         .app-features-container{
             .feature-container{
                 .feature-header{
@@ -151,6 +159,71 @@ button {
         }
     }
 
+    // Upcoming Features Section =====================================================
+
+    .upcoming-features-section-page {
+        color: @smoke-white;    
+        .listed-items-page {
+            font-size: 2rem;    
+            @media @mobile {
+                font-size: 1.8rem;
+                margin-top: 0;
+              
+                p {
+                    text-align: justify;
+                    text-justify: inter-word;
+                }
+            }
+    
+            .feature {                
+                .header-text {
+                    line-height: 1.2;
+        
+                    h2 {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    
+        h1 {
+            font-size: 4rem; 
+            color: @smoke-white 
+        }
+    }
+
+    .upcoming-features-section {
+        color: @smoke-white;
+        }
+        h1 {
+            font-size: 4rem; 
+            color: @smoke-white 
+        }
+        .listed-items {        
+            li {
+                font-size: 2.5rem;
+            }
+        }
+// Contact Section =====================================================
+    .contact-section{
+        .container-contact {   
+            .contact-form-title {
+                font-size: 3rem;
+                color: @smoke-white;
+                line-height: 1.2;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            .wrap-input {
+                .input {
+                    font-size: 1.8rem;
+                    color: @night-rider;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+
     .main-footer{
         .copyright{
             font-size: 2rem;
@@ -158,3 +231,5 @@ button {
         }
     }
 }
+
+
