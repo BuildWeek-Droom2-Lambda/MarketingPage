@@ -19,7 +19,9 @@
     }
     &-introduction{
         .position(relative, 25%, 50%);
-        .flexible-display-layout(flex, column, center);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         line-height: 2.3rem;
         transform: translateY(12rem);
         padding: 1rem;
@@ -151,12 +153,6 @@
 // Upcoming Features Section =====================================================
 .upcoming-features-section {
     .display-layout(column, space-around, center);
-    color: @smoke-white;
-    }
-
-    h1 {
-        font-size: 4rem; 
-        color: @smoke-white 
     }
     
     .listed-items {
@@ -168,7 +164,6 @@
     
         li {
             margin: 40px;
-            font-size: 2.5rem;
 
             @media @mobile {
                 margin: 20px;

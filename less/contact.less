@@ -2,10 +2,8 @@
 
 .container-contact {
     width: 100%;  
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    .flexible-display-layout(flex, center, center);
 
     @media @mobile {
       width: 95%;
@@ -24,11 +22,6 @@
     }    
       .contact-form-title {
         display: block;
-        font-size: 3rem;
-        color: @smoke-white;
-        line-height: 1.2;
-        text-transform: uppercase;
-        text-align: center;
         padding-bottom: 49px;
         padding-left: 10%;
       }
@@ -45,9 +38,6 @@
             width: 100%;
             background: @smoke-white;
             border-radius: 31px;
-            font-size: 1.8rem;
-            color: @night-rider;
-            line-height: 1.2;
           }
 
           input.input {
@@ -73,8 +63,7 @@
 
     button {
       position: relative;
-      height: 5rem;
-      width: 20rem;
+      .dimensions(5rem, 20rem);
       margin: 0 2rem;
       background-color: @primary;
       border: .2rem ridge @smoke-white;
@@ -89,7 +78,6 @@
 
       @media @mobile {
           width: 80%;
-          font-size: 1.5rem;
       }
   
       }
