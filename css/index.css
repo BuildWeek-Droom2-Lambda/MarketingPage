@@ -251,6 +251,29 @@ button:hover {
   line-height: 2rem;
   color: #F9ED6C;
 }
+@media (max-width: 1050px) {
+  .super-flex .about-section .photo-card-container .photo-bio-box:hover > .bio-container > .bio-header {
+    font-size: 1.8rem;
+    color: #F9ED6C;
+  }
+  .super-flex .about-section .photo-card-container .photo-bio-box:hover > .bio-container > .bio-greeting {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #F9ED6C;
+  }
+}
+@media (max-width: 840px) {
+  .super-flex .about-section .photo-card-container .photo-bio-box:hover > .bio-container > .bio-header {
+    font-size: 1.4rem;
+    color: #F9ED6C;
+  }
+  .super-flex .about-section .photo-card-container .photo-bio-box:hover > .bio-container > .bio-greeting {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #F9ED6C;
+  }
+}
 .super-flex .about-section .photo-card-container .photo-bio-box .bio-container {
   color: #EEEEEE;
 }
@@ -881,16 +904,17 @@ button:hover {
     padding: 0.5rem;
   }
 }
+@media (max-width: 500px) {
+  .about-section .photo-card-container .photo-bio-box {
+    position: relative;
+    height: 30%;
+    width: 25%;
+    padding: 0.5rem;
+  }
+}
 .about-section .photo-card-container .photo-bio-box:hover + .about-section .photo-card-container .photo-bio-box:not(.about-section .photo-card-container .photo-bio-box:hover) {
   height: 70%;
   width: 12.5%;
-}
-.about-section .photo-card-container .photo-bio-box:hover {
-  cursor: pointer;
-  height: 90%;
-  width: 15%;
-  background-color: #7851A9;
-  border: 0.2rem solid #F9ED6C;
 }
 .about-section .photo-card-container .photo-bio-box .image-container {
   height: 50%;
@@ -931,6 +955,49 @@ button:hover {
   transform: translateY(1rem);
   transition: font-size 0.5s, line-height 0.5s;
 }
+.about-section .photo-card-container .photo-bio-box:hover {
+  cursor: pointer;
+  height: 90%;
+  width: 15%;
+  background-color: #7851A9;
+  border: 0.2rem solid #F9ED6C;
+}
+@media (max-width: 1050px) {
+  .about-section .photo-card-container .photo-bio-box:hover {
+    height: 70%;
+    width: 15%;
+  }
+  .about-section .photo-card-container .photo-bio-box:hover .bio-container .bio-greeting {
+    position: relative;
+    height: 55%;
+    width: 95%;
+  }
+}
+@media (max-width: 840px) {
+  .about-section .photo-card-container .photo-bio-box:hover .bio-container .bio-greeting {
+    position: relative;
+    height: 55%;
+    width: 90%;
+  }
+}
+@media (max-width: 770px) {
+  .about-section .photo-card-container .photo-bio-box:hover {
+    height: 40%;
+    width: 20%;
+  }
+}
+@media (max-width: 720px) {
+  .about-section .photo-card-container .photo-bio-box:hover {
+    height: 40%;
+    width: 15%;
+  }
+}
+@media (max-width: 500px) {
+  .about-section .photo-card-container .photo-bio-box:hover {
+    height: 30%;
+    width: 25%;
+  }
+}
 .about-section .button-link {
   position: relative;
   height: 5rem;
@@ -943,12 +1010,17 @@ button:hover {
 }
 @media (max-width: 1075px) {
   .about-section .button-link {
-    transform: translateY(14rem);
+    transform: translateY(20rem);
   }
 }
 @media (max-width: 720px) {
   .about-section .button-link {
     transform: translateY(-2rem);
+  }
+}
+@media (max-width: 500px) {
+  .about-section .button-link {
+    transform: translateY(-1rem);
   }
 }
 .about-section .button-link:hover {

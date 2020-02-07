@@ -167,15 +167,13 @@
                 .position(relative, 30%, 20%);
                 padding: .5rem;
             }
+            @media @mobile {
+                .position(relative, 30%, 25%);
+                padding: .5rem;
+            }
             &:hover + &:not(&:hover){
                 height: 70%;
                 width: 12.5%;
-            }
-            &:hover{
-                cursor: pointer;
-                .dimensions(90%, 15%);
-                background-color: @primary;
-                border: .2rem solid @secondary;
             }
             .image-container{
                 .dimensions(50%, 80%);
@@ -205,6 +203,36 @@
                     transition: font-size .5s, line-height .5s;
                 }
             }
+            &:hover{
+                cursor: pointer;
+                .dimensions(90%, 15%);
+                background-color: @primary;
+                border: .2rem solid @secondary;
+                @media(max-width: 1050px){
+                    .dimensions(70%, 15%);
+                    .bio-container{
+                        .bio-greeting{
+                            .position(relative, 55%, 95%);
+                        }
+                    }
+                }
+                @media(max-width: 840px){
+                    .bio-container{
+                        .bio-greeting{
+                            .position(relative, 55%, 90%);
+                        }
+                    }
+                }
+                @media(max-width: 770px){
+                    .dimensions(40%, 20%);
+                }
+                @media(max-width: 720px){
+                    .dimensions(40%, 15%);
+                }
+                @media(max-width: 500px){
+                    .dimensions(30%, 25%);
+                }
+            }
         }
     }
 
@@ -217,10 +245,13 @@
             border-radius: 1rem;
             transform: translateY(8rem);
             @media(max-width: 1075px){
-                transform: translateY(14rem);
+                transform: translateY(20rem);
             }
             @media(max-width: 720px){
                 transform: translateY(-2rem);
+            }
+            @media @mobile {
+                transform: translateY(-1rem);
             }
             &:hover{
                 cursor: pointer;

@@ -103,6 +103,29 @@ button {
                     line-height: 2rem;
                     color: @secondary;
                 }
+                @media(max-width: 1050px){
+                    &:hover > .bio-container > .bio-header{
+                        font-size: 1.8rem;
+                        color: @secondary;
+                    }
+                    &:hover > .bio-container > .bio-greeting{
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                        color: @secondary;
+                    }
+                }
+                @media(max-width: 840px){
+                    &:hover > .bio-container > .bio-header{
+                        font-size: 1.4rem;
+                        color: @secondary;
+                    }
+                    &:hover > .bio-container > .bio-greeting{
+                        font-size: 1.2rem;
+                        line-height: 2rem;
+                        text-align: center;
+                        color: @secondary;
+                    }
+                }
                 .bio-container{    
                     color: @smoke-white;
                     .bio-header{
