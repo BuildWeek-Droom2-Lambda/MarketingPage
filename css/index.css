@@ -982,14 +982,14 @@ button:hover {
 }
 @media (max-width: 770px) {
   .about-section .photo-card-container .photo-bio-box:hover {
-    height: 40%;
-    width: 20%;
+    height: 37.5%;
+    width: 22.5%;
   }
 }
 @media (max-width: 720px) {
   .about-section .photo-card-container .photo-bio-box:hover {
     height: 40%;
-    width: 15%;
+    width: 20%;
   }
 }
 @media (max-width: 500px) {
