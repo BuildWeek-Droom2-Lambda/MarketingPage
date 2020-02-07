@@ -28,6 +28,9 @@ button {
                 &:hover{
                     color: @night-rider;
                 }
+                @media(max-width: 600px){
+                    font-size: 1.2rem;
+                }
             }
         }
     }
@@ -38,11 +41,17 @@ button {
                 font-size: 4rem;
                 font-weight: bold;
                 color: @smoke-white;
+                @media(max-width: 1175px){
+                    font-size: 3rem;
+                }
             }
             &-pitch{
                 font-size: 1.6rem;
                 color: rgba(@smoke-white, .7);
                 text-align: center;
+                @media(max-width: 1175px){
+                    font-size: 1.4rem;
+                }
             }
         }
         .button-container{
@@ -70,6 +79,18 @@ button {
             font-size: 10rem;
             font-weight: bold;
             color: @smoke-white;
+            @media(max-width: 1325px){
+                font-size: 7rem;
+            }
+            @media(max-width: 925px){
+                font-size: 5.5rem;
+            }
+            @media(max-width: 720px){
+                font-size: 4rem;
+            }
+            @media(max-width: 530px){
+                font-size: 3rem;
+            }
         }
         .photo-card-container{
             .photo-bio-box{
@@ -82,15 +103,50 @@ button {
                     line-height: 2rem;
                     color: @secondary;
                 }
+                @media(max-width: 1050px){
+                    &:hover > .bio-container > .bio-header{
+                        font-size: 1.8rem;
+                        color: @secondary;
+                    }
+                    &:hover > .bio-container > .bio-greeting{
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                        color: @secondary;
+                    }
+                }
+                @media(max-width: 840px){
+                    &:hover > .bio-container > .bio-header{
+                        font-size: 1.4rem;
+                        color: @secondary;
+                    }
+                    &:hover > .bio-container > .bio-greeting{
+                        font-size: 1.2rem;
+                        line-height: 2rem;
+                        text-align: center;
+                        color: @secondary;
+                    }
+                }
                 .bio-container{    
                     color: @smoke-white;
                     .bio-header{
                         font-size: 1.8rem;
+                        @media(max-width: 1325px){
+                            font-size: 1.4rem;
+                        }
+                        @media(max-width: 1175px){
+                            font-size: 1.2rem;
+                        }
                     }
                     .bio-greeting{
                         font-size: 1.5rem;
                         line-height: 1.6rem;
                         text-align: center;
+                        @media(max-width: 1325px){
+                            font-size: 1.2rem;
+                        }
+                        @media(max-width: 1210px){
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
@@ -112,16 +168,38 @@ button {
     .employee-name{
         font-size: 6rem;
         font-weight: bold;
-        color: @smoke-white
+        color: @smoke-white;
+        @media(max-width: 950px){
+            font-size: 4rem;
+            transform: translateY(-3rem);
+        }
+        @media(max-width: 700px){
+            transform: translateY(0rem);
+        }
+        @media(max-width: 600px){
+            font-size: 3rem;
+        }
     }
 
     .employee-intro{
         font-size: 2.4rem;
         color: @smoke-white;
+        @media(max-width: 950px){
+            font-size: 2rem;
+        }
+        @media(max-width: 600px){
+            font-size: 1.6rem;
+        }
         .employee-greeting{
             font-size: 5rem;
             font-weight: bold;
             text-align: center;
+            @media(max-width: 950px){
+                font-size: 3.5rem;
+            }
+            @media(max-width: 600px){
+                font-size: 2.4rem;
+            }
         }
     }
 
@@ -130,6 +208,15 @@ button {
             font-size: 7rem;
             color: @smoke-white;
             transform: translateY(5rem);
+
+            @media(max-width: 1350px){
+                transform: translateY(-2rem);
+            }
+            @media(max-width: 840px){
+                font-size: 5rem;
+                transform: translateY(-4rem);
+            }
+
         }
         .app-features-container{
             .feature-container{
@@ -153,6 +240,38 @@ button {
                     .feature-intro{
                         font-size: 1.4rem;
                         color: @night-rider;
+                    }
+                }
+                @media(max-width: 1350px){
+                    .feature-header{
+                        font-size: 1.4rem;
+                    }
+                    .feature-intro{
+                        font-size: 1rem;
+                    }
+                    &:hover{
+                        .feature-header{
+                            font-size: 1.7rem;
+                        }
+                        .feature-intro{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+                @media(max-width: 580px){
+                    .feature-header{
+                        font-size: 1.2rem;
+                    }
+                    .feature-intro{
+                        font-size: 1rem;
+                    }
+                    &:hover{
+                        .feature-header{
+                            font-size: 1.2rem;
+                        }
+                        .feature-intro{
+                            font-size: 1.1rem;
+                        }
                     }
                 }
             }
