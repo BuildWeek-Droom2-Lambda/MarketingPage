@@ -334,6 +334,7 @@ button:hover {
   width: auto;
   margin-right: 1rem;
 }
+/* Home Page Sections */
 .intro-section,
 .about-section,
 .upcoming-features-section,
@@ -350,6 +351,7 @@ button:hover {
 .intro-section {
   flex-direction: column;
   align-items: center;
+  /* Home Page Button Styling */
 }
 .intro-section .large-logo {
   position: relative;
@@ -414,11 +416,13 @@ button:hover {
 .intro-section .button-container .button-link button:active {
   transform: translateY(0.25rem);
 }
+/* About Section */
 .about-section {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* About Button */
 }
 .about-section-header {
   position: relative;
